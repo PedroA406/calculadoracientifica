@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="container">
+        <h1>CALCULADORA</h1>
+        <hr>
+        <fieldset id="valores">
+            <legend style="color: aliceblue;">VALORES DO CÁLCULO</legend>    
+            
+            <LABEL  style="color: aliceblue;">NÚMERO 1</LABEL>
+            <input type="number" id="n1">
+
+            <LABEL  style="color: aliceblue;" >NÚMERO 2</LABEL>
+            <input type="number" id="n2">
+        </fieldset>
+        
+        <fieldset id="opera"  style="color: aliceblue;">
+            <legend>OPERAÇÕES</legend>
+            <span><input type="radio" name="op"> ADIÇÃO</span>
+            <span><input type="radio" name="op"> SUBTRAÇÃO</span>
+            <span><input type="radio" name="op"> MULTIPLICAÇÃO</span>
+            <span><input type="radio" name="op"> DIVISÃO</span>
+            <span><input type="radio" name="op"> FATORIAL</span>
+        </fieldset>
+
+        <button onclick="clique()">Calcular</button>
+        <button id="clique2" onclick="numeroFatorial()">Fatorial</button>
+        <button id="clique3" onclick="raizquadrada()">Raiz quadrada</button>
+
+        <fieldset id="res"  style="color: aliceblue;">
+            <legend>RESULTADO</legend>
+            <h1 id="resultado">...</h1>
+        </fieldset>
+
+    </div>
+    <script src="calculo.js"></script>
+</body>
+</html>
